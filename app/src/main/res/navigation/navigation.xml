@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.maptest.screens.map.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.maptest.screens.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/savedPlacesFragment"
+        android:name="com.example.maptest.screens.savedPlaces.SavedPlacesFragment"
+        android:label="Saved places"
+        tools:layout="@layout/fragment_saved_places" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.maptest.screens.about.AboutFragment"
+        android:label="About app"
+        tools:layout="@layout/fragment_about" />
+</navigation>
